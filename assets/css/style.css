@@ -69,19 +69,9 @@ p{
 
 /* header begins here
 ----------------------------------------------- */
-.header-main .top-bar{
-  padding-top: 10px
-}
-.header-main .top-bar .social-links li{
-  margin-left: 7px;
-  margin-right: 7px;
-}
 .header-main .main-logo{
   font-family: 'Montserrat-Light';
   font-size: 35px;
-}
-.header-main .navbar .navbar-nav{
-  margin-left: auto;
 }
 .header-main .navbar a{
   color: black;
@@ -110,7 +100,6 @@ p{
 .hero-banner .h-button{
   background-color: #1bb1dc;
   color: white;
-  padding: 8px 25px;
   font-size: 13px;
 }
 .hero-banner .h-button:hover{
@@ -121,7 +110,6 @@ p{
  font-family: 'Montserrat-Regular';
   color: #413e66;
   letter-spacing: 2px;
-  margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700
 }
@@ -296,3 +284,30 @@ p{
 }
 /* why choose us ends here
 ----------------------------------------------- */
+
+.call-action{
+  background-color: #2d2b46;
+  color: #fff;
+  padding: 40px 0;
+}
+.call-action .action-content h2{
+  font-size: 30px;
+  font-family: 'Montserrat-Bold';
+  margin-bottom: 25px;
+}
+.call-action .action-button a{
+  padding: 8px 26px;
+  border: 3px solid white;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: 0.4s ease-out;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.call-action .action-button a:hover{
+  background-color: #1bb1dc;
+  border: 3px solid #1bb1dc;
+  transition: 0.4s ease-in;
+  color: white;
+  text-decoration: none
+}
