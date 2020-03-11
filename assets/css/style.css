@@ -260,5 +260,39 @@ p{
   padding: 80px 0px;
   background-color: #ffffff;
 }
+.choose-us .content-area p{
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+.choose-us .points{
+  position: relative;
+}
+.choose-us .points h3{
+  color:#413e66;
+  font-weight: 600
+}
+.choose-us .points p{
+  color: #555186
+}
+.choose-us .points .point-icon{
+  position: absolute;
+  top:4px;
+  left: 0px;
+  font-size: 36px;
+}
+.choose-us .counter-tab .single-counter{
+    flex-direction: column;
+    display: flex;
+}
+.choose-us .counter-tab .single-counter span{
+  font-size: 48px;
+  color: #555186;
+  font-family: 'Montserrat-Bold';
+
+}
+.choose-us .counter-tab .single-counter p{
+  color: #8a87b6;
+  font-size: 14px;
+}
 /* why choose us ends here
 ----------------------------------------------- */
