@@ -57,6 +57,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+a:hover{
+  text-decoration: none;
+}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0
@@ -488,4 +491,63 @@ p{
   transition: 0.4s;
 }
 /* pricing ends here
+------------------------------------------------ */
+
+/* Frequently asked questions start here
+------------------------------------------------ */
+.faq{
+  background-color: #fff;
+  padding: 80px 0;
+}
+/*  contact us starts here
+------------------------------------------------ */
+.contact-us{
+  background-color: #f5f8fd;
+  padding: 50px 0px;
+  font-family: 'Montserrat-Light';
+
+}
+.contact-us .col-6 h4{
+  color: #413e66;
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact-us .col-6 h3{
+  font-weight: 300;
+  color: #413e66;
+  font-family: 'Montserrat-Light';
+  letter-spacing: 2px;
+  font-size: 34px;
+}
+.contact-us .f-t-first{
+  font-size: 13px;
+  line-height: 24px;
+}
+.contact-us .f-t-second{
+  font-size: 14px;
+  color: #696592;
+}
+.contact-us .f-b-first{
+  font-size: 14px;
+}
+.contact-us .f-b-second{
+  font-size: 14px;
+}
+.contact-us .footer-social{
+  width: 70%;
+}
+.contact-us .footer-social li figure{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #1bb1dc;
+  color: white;
+  font-size: 20px;
+}
+.contact-us .footer-social a:hover figure{
+  background-color: #0a98c0;
+
+}
+/*  contact us ends here
 ------------------------------------------------ */
