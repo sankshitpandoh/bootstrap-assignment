@@ -369,6 +369,7 @@ p{
 }
 /* testimonials end here
 ------------------------------------------------*/
+
 /* teams tarts here
 ------------------------------------------------ */
 .team{
@@ -381,13 +382,15 @@ p{
 }
 .team-grid .team-card .card-hover{
   position: absolute;
+  font-family: 'Montserrat-Regular';
   color: white;
   bottom: 0;
   left: 0px;
   width: 100%;
   background:rgba(29, 28, 41, 0.6);
-  height: 25%;
+  height: 26%;
   transition: 0.4s;
+  text-align: center;
 }
 .team-grid .team-card .card-hover h4{
   font-weight: 700;
@@ -398,8 +401,23 @@ p{
   font-style: italic;
 }
 .team-grid .team-card:hover .card-hover{
-  height: 40%;
+  height: 43%;
   transition: 0.4s;
 }
 /* team ends here
+------------------------------------------------ */
+/* our clients start here
+------------------------------------------------ */
+.our-clients{
+  padding: 60px 0;
+}
+.c-slider .item{
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.c-slider .item:hover{
+  opacity: 1;
+  transition: 0.4s
+}
+/* our clients end here
 ------------------------------------------------ */
