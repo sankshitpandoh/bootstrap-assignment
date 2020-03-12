@@ -5,7 +5,7 @@ owl.owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:10000,
+    autoplayTimeout:6000,
     autoplayHoverPause:true
 });
 });

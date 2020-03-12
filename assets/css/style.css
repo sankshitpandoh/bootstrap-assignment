@@ -198,6 +198,7 @@ p{
 .section-heading p{
   color: #535074;
   font-size: 15px;
+  text-align: center;
 }
 .services .single-service{
   background-color: #fff;
@@ -364,8 +365,41 @@ p{
   color: #999
 }
 .t-slider .item .item-info p{
-  width: 80%;
   font-style: italic;
 }
 /* testimonials end here
 ------------------------------------------------*/
+/* teams tarts here
+------------------------------------------------ */
+.team{
+  background-color: #f5f8fd;
+  padding: 80px 0;
+}
+.team-grid .team-card{
+  position: relative;
+  overflow: hidden;
+}
+.team-grid .team-card .card-hover{
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  background:rgba(29, 28, 41, 0.6);
+  height: 25%;
+  transition: 0.4s;
+}
+.team-grid .team-card .card-hover h4{
+  font-weight: 700;
+  font-size: 18px;
+}
+.team-grid .team-card .card-hover p{
+  font-size: 13px;
+  font-style: italic;
+}
+.team-grid .team-card:hover .card-hover{
+  height: 40%;
+  transition: 0.4s;
+}
+/* team ends here
+------------------------------------------------ */
