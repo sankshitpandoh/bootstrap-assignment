@@ -14,7 +14,7 @@ owl.owlCarousel({
   loop:true,
   margin:30,
   autoplay:true,
-  autoplayTimeout:6000,
+  autoplayTimeout:5000,
   autoplayHoverPause:true
 });
 });

@@ -131,7 +131,8 @@ p{
 }
 .about-us .about-us-img figure img{
   width: 90%;
-  z-index: 1
+  z-index: 1;
+  transition: 0.75s
 }
 .about-us .about-us-img figure img:hover{
   transform: scale(1.03);
@@ -528,8 +529,30 @@ p{
   font-size: 14px;
   color: #696592;
 }
+.contact-us .f-t-second a:hover{
+  color:   #1bb1dc;
+}
 .contact-us .f-b-first{
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.contact-us .f-b-first form input:nth-child(1){
+  width: 65%;
+  border: 1px solid #d9dde6;
+  padding: 6px 8px;
+}
+.contact-us .f-b-first form input:nth-child(2){
+  width: 35%;
+  background-color: #1bb1dc;
+  border:1px solid #1bb1dc;
+  color: white;
+  transition: 0.4s;
+  padding: 6px 8px;
+}
+.contact-us .f-b-first form input:nth-child(2):hover{
+  cursor: pointer;
+  background-color: #0a98c0;
+  transition: 0.4s;
 }
 .contact-us .f-b-second{
   font-size: 14px;
@@ -544,10 +567,11 @@ p{
   background-color: #1bb1dc;
   color: white;
   font-size: 20px;
+  transition: 0.4s;
 }
 .contact-us .footer-social a:hover figure{
   background-color: #0a98c0;
-
+  transition: 0.4s;
 }
 /*  contact us ends here
 ------------------------------------------------ */
