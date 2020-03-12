@@ -33,6 +33,7 @@ body{
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  color: #444
 }
 *{
   box-sizing: border-box;
@@ -160,26 +161,22 @@ p{
   color: #413e66;
   font-size: 35px;
   font-family: 'Montserrat-Regular';
-  margin-bottom: 15px;
   font-weight: 900
 }
 .about-us .text-area p:nth-child(2){
   color: #696592;
   font-size: 22px;
   font-family: 'Montserrat-Light';
-  margin-bottom: 15px;
   font-style: italic;
 }
 .about-us .text-area p{
   font-size: 17px;
-  margin-bottom: 25px;
   font-family: "Open Sans", sans-serif;
   color: #444
 }
 .about-us .text-area li{
   list-style-type: circle;
   display: block;
-  margin-bottom: 15px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.8px
 }
@@ -285,6 +282,8 @@ p{
 /* why choose us ends here
 ----------------------------------------------- */
 
+/* call to action starts here
+------------------------------------------------ */
 .call-action{
   background-color: #2d2b46;
   color: #fff;
@@ -293,10 +292,8 @@ p{
 .call-action .action-content h2{
   font-size: 30px;
   font-family: 'Montserrat-Bold';
-  margin-bottom: 25px;
 }
 .call-action .action-button a{
-  padding: 8px 26px;
   border: 3px solid white;
   font-size: 16px;
   border-radius: 3px;
@@ -311,3 +308,25 @@ p{
   color: white;
   text-decoration: none
 }
+/* call to action ends here
+------------------------------------------------ */
+
+/* features section starts here
+------------------------------------------------ */
+.features-section{
+  background-color: #fff;
+  padding: 80px 0;
+
+}
+.features-section .feature-text h3{
+  font-family: 'Montserrat-Regular';
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.2
+}
+.features-section .feature-text p{
+  font-size: 17px;
+  line-height: 1.5
+}
+/* features section ends here
+------------------------------------------------ */
