@@ -193,12 +193,11 @@ p{
   color: #413e66;
   font-size: 35px;
   font-family: 'Montserrat-Bold';
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .section-heading p{
   color: #535074;
   font-size: 15px;
-  margin-bottom: 40px;
 }
 .services .single-service{
   background-color: #fff;
@@ -213,11 +212,14 @@ p{
   color: #1bb1dc;
 }
 .services .single-service figure{
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 0 auto;
   background-color: red
+}
+.services .single-service figure i{
+  font-size: 40px;
 }
 .services .single-service h3{
   text-align: center;
@@ -330,3 +332,20 @@ p{
 }
 /* features section ends here
 ------------------------------------------------ */
+
+/* our portfolio starts here
+------------------------------------------------ */
+.portfolio{
+  background-color: #f5f8fd;
+  padding: 80px 0;
+}
+/* our portfolio ends here
+-------------------------------------------------*/
+/* testimonials start here
+------------------------------------------------*/
+.testimonials{
+  background-color: #fff;
+  padding: 80px 0;
+}
+/* testimonials end here
+------------------------------------------------*/
