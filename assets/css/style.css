@@ -98,12 +98,12 @@ p{
 .hero-banner .h-color{
   color: #1bb1dc
 }
-.hero-banner .h-button{
+.h-button{
   background-color: #1bb1dc;
   color: white;
   font-size: 13px;
 }
-.hero-banner .h-button:hover{
+.h-button:hover{
   background-color: #0a98c0;
   color: white
 }
@@ -199,6 +199,7 @@ p{
   color: #535074;
   font-size: 15px;
   text-align: center;
+  width: 50%;
 }
 .services .single-service{
   background-color: #fff;
@@ -406,6 +407,7 @@ p{
 }
 /* team ends here
 ------------------------------------------------ */
+
 /* our clients start here
 ------------------------------------------------ */
 .our-clients{
@@ -420,4 +422,70 @@ p{
   transition: 0.4s
 }
 /* our clients end here
+------------------------------------------------ */
+
+/* pricing starts here
+------------------------------------------------ */
+.pricing{
+  background-color: #f5f8fd;
+  padding: 80px 0;
+}
+.price-grid .price-card{
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 3px solid #e7e9f1;
+  transition: 0.4s;
+  position: relative;
+}
+.price-grid .price-card:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width:  0%;
+  background-color: #1bb1dc;
+  transition: 0.4s;
+}
+.price-grid .price-card h2{
+  color: #535074;
+  font-size: 64px;
+  position: relative;
+  font-family: 'Montserrat-Light';
+  font-weight: 400
+}
+.price-grid .price-card h2 .money{
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  left: 95px;
+}
+.price-grid .price-card h2 .month{
+  font-size: 16px;
+  color: #6c67a3;
+  position: absolute;
+  bottom: 12px;
+  right: 52px;
+}
+.price-grid .price-card h3{
+  color: #535074;
+  font-family: 'Montserrat-Light';
+  font-size: 24px;
+}
+.price-grid .price-card p{
+  width: 55%;
+  margin: 0 auto;
+  line-height: 2
+}
+.price-grid .price-card:hover{
+  transform: scale(1.05);
+  transition: 0.4s;
+  border: none;
+  box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08)
+}
+.price-grid .price-card:hover:after{
+  width: 100%;
+  transition: 0.4s;
+}
+/* pricing ends here
 ------------------------------------------------ */
