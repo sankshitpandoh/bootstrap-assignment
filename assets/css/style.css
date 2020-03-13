@@ -47,15 +47,14 @@ p{ margin:0; padding:0}
 .common-button:hover{ cursor:pointer; background-color:#0a98c0; transition:0.4s;}
 .single-link{ color:black; font-family:'Montserrat-Regular'; font-size:14px;}
 .single-link:hover{ color:#1bb1dc}
-
 /* global css ends here
 ----------------------------------------------- */
 
 /* header begins here
 ----------------------------------------------- */
 .header-main .main-logo{ font-family:'Montserrat-Light'; font-size:35px;}
-.first-down{ display: none; position: absolute; left:62%; top:100%; background-color: #fff; z-index: 10; transition: 4s}
-.second-down{ display: none; position: absolute; left:88%; top:25%; background-color: #fff; z-index: 10; transition: 4s}
+.first-down{ display: none; position: absolute; left:62%; top:100%; background-color: #fff; z-index: 10; transition: 4s; font-size: 14px; box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
+.second-down{ display: none; position: absolute; left:88%; top:25%; background-color: #fff; z-index: 10; transition: 4s; font-size: 14px;width: 170px; box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
 .navbar-nav{ position: relative;}
 .drop-one:hover .first-down{display:block; transition: 0.4s}
 .drop-two:hover .second-down{display:block; transition: 0.4s}
