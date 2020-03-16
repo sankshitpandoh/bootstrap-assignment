@@ -147,8 +147,8 @@ width: 100%}
 /* our portfolio starts here
 ------------------------------------------------ */
 .portfolio{ background-color:#f5f8fd; padding:80px 0;}
-.port-nav li{ cursor: pointer; background-color: blue;}
-.filter-active{ background-color: red; color: yellow }
+.port-nav li{ cursor: pointer;}
+.filter-active{ color: #1bb1dc}
 /* our portfolio ends here
 -------------------------------------------------*/
 
