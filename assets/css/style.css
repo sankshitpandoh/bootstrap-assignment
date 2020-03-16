@@ -209,6 +209,9 @@ p{ margin:0; padding:0}
   border-bottom: 1px solid #ebebeb;
   color: #000;
 }
+.faq .question a:hover{
+  color: #000;
+}
 .faq .question h4{
   font-family: 'Montserrat-Light';
   font-weight: 300;

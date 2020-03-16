@@ -81,14 +81,17 @@ $(document).ready(function(){
 
 var Open = false;
 $('.question a').on('click', function(){
+  // var contentPanelId = $(this).attr("id");
   if(Open == false){
     $('.question .answer').css({'display': 'block'});
+    $('.question a').css({'color': '#0a98c0'});
     $('.question a i').removeClass('ion-ios-add');
     $('.question a i').addClass('ion-ios-remove');
     Open = true;
   }
   else{
     $('.question .answer').css({'display' : 'none'});
+    $('.question a').css({'color': '#000'});
     $('.question a i').addClass('ion-ios-add');
     $('.question a i').removeClass('ion-ios-remove');
     Open = false
