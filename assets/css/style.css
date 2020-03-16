@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
 figure{ padding:0; margin:0; line-height:0;}
 img{ max-width:100%; max-height:100%}
 ul,li{ text-decoration:none; display:inline; margin:0; padding:0;}
-a{ text-decoration:none; color:inherit;}
+a{ text-decoration:none; color:inherit; transition: all 0.5s;}
 a:hover{ text-decoration:none;}
 p{ margin:0; padding:0}
 /* reset css ends here
@@ -43,8 +43,8 @@ p{ margin:0; padding:0}
 
 /* global css starts here
 ----------------------------------------------- */
-.common-button{ background-color:#1bb1dc; color:white; transition:0.4s;}
-.common-button:hover{ cursor:pointer; background-color:#0a98c0; transition:0.4s;}
+.common-button{ background-color:#1bb1dc; color:white; transition: all0.4s;}
+.common-button:hover{ cursor:pointer; background-color:#0a98c0;}
 .single-link{ color:black; font-family:'Montserrat-Regular'; font-size:14px;}
 .single-link:hover{ color:#1bb1dc}
 /* global css ends here
@@ -52,23 +52,14 @@ p{ margin:0; padding:0}
 
 /* header begins here
 ----------------------------------------------- */
-.header-main .main-logo{ font-family:'Montserrat-Light'; font-size:35px}
-.first-down{ display: none; position: absolute; left:62%; top:100%; background-color: #fff; z-index: 10; transition: 4s; font-size: 14px; box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
-.second-down{ display: none; position: absolute; left:88%; top:25%; background-color: #fff; z-index: 10; transition: 4s; font-size: 14px;width: 170px; box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
+.header-main .main-logo{ font-family: 'Montserrat-Light';font-size: 35px}
+.first-down{ display: none;position: absolute;left: 62%;top: 100%;background-color: #fff;z-index: 10;transition: all 4s;font-size: 14px;box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
+.second-down{ display: none;position: absolute;left: 88%;top: 25%;background-color: #fff;z-index: 10;transition: all 4s;font-size: 14px;width: 170px;box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
 .navbar-nav{ position: relative;}
-.drop-one:hover .first-down{display:block; transition: 0.4s}
-.drop-two:hover .second-down{display:block; transition: 0.4s}
-.header-scrolled{height: 70px;
-padding: 15px 0;
-background-color: #fff;
-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-position: fixed;
-top: 0;
-z-index: 995;
-width: 100%}
-.bar-scrolled{
-  display: none
-}
+.drop-one:hover .first-down{ display: block;}
+.drop-two:hover .second-down{ display: block;}
+.header-scrolled{ height: 70px;padding: 15px 0;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%}
+.bar-scrolled{ display: none}
 /* header ends here
 ----------------------------------------------- */
 
@@ -85,11 +76,11 @@ width: 100%}
 ---------------------------------------------- */
 .about-us{ padding:80px 0px; background-color:#ffffff}
 .about-us .about-us-img{ position:relative;}
-.about-us .about-us-img figure img{ width:90%; z-index:1; transition:0.75s}
+.about-us .about-us-img figure img{ width:90%; z-index:1; transition:all 0.75s}
 .about-us .about-us-img figure::before{ content:""; position:absolute; width:80%; height:92%; top:-30px; left:0px; background-color:#ebf1fa; z-index:0;}
 .about-us .about-us-img figure::after{ content:""; position:absolute; width:80%; height:92%; bottom:-30px; right:0px; background-color:#ebf1fa; z-index:0;}
 .about-us .about-us-img figure img{ border:8px solid white;}
-.about-us .about-us-img figure img:hover{ transform:scale(1.03); transition:0.75s}
+.about-us .about-us-img figure img:hover{ transform:scale(1.03);}
 .about-us .text-area h3{ color:#413e66; font-size:35px; font-family:'Montserrat-Regular'; font-weight:900}
 .about-us .text-area p{ font-size:17px; font-family:"Open Sans", sans-serif; color:#444}
 .about-us .text-area p:nth-child(2){ color:#696592; font-size:22px; font-family:'Montserrat-Light'; font-style:italic;}
@@ -131,8 +122,8 @@ width: 100%}
 ------------------------------------------------ */
 .call-action{ background-color:#2d2b46; color:#fff; padding:40px 0;}
 .call-action .action-content h2{ font-size:30px; font-family:'Montserrat-Bold';}
-.call-action .action-button a{ border:3px solid white; font-size:16px; border-radius:3px; transition:0.4s ease-out; font-weight:600; letter-spacing:1px;}
-.call-action .action-button a:hover{ background-color:#1bb1dc; border:3px solid #1bb1dc; transition:0.4s ease-in; color:white; text-decoration:none}
+.call-action .action-button a{ border:3px solid white; font-size:16px; border-radius:3px; transition: all 0.4s ease-out; font-weight:600; letter-spacing:1px;}
+.call-action .action-button a:hover{ background-color:#1bb1dc; border:3px solid #1bb1dc; color:white; text-decoration:none}
 /* call to action ends here
 ------------------------------------------------ */
 
@@ -146,9 +137,22 @@ width: 100%}
 
 /* our portfolio starts here
 ------------------------------------------------ */
-.portfolio{ background-color:#f5f8fd; padding:80px 0;}
-.port-nav li{ cursor: pointer;}
-.filter-active{ color: #1bb1dc}
+.portfolio{ background-color: #f5f8fd;padding: 80px 0;}
+.filter-active{ color: #1bb1dc;}
+.portfolio .port-nav li{ cursor: pointer;}
+.portfolio .port-nav li:hover{ color: #1bb1dc;transition: all 0.4s}
+.portfolio .port-item{ position: relative;}
+.portfolio .port-item .port-hover{ background-color: rgba(40,38,70,1);font-family: 'Montserrat-Regular';color: #fff;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: 0 15px;display: none;}
+.portfolio .port-item:hover .port-hover{ display: flex;background-color: rgba(40,38,70,0.6)}
+.portfolio .port-item .port-hover h4{ font-weight: 700;}
+.portfolio .port-item .port-hover h4 a{ font-size: 22px;background-color: transparent;}
+.portfolio .port-item .port-hover h4 a:hover{ font-size: 22px;background-color: transparent;color: #1bb1dc}
+.portfolio .port-item .port-hover p{ font-family: 'Montserrat-Light';font-size: 14px;font-weight: 400}
+.portfolio .port-item .port-hover a{ height: 35px;width: 35px;border-radius: 50%;background-color: #1bb1dc;}
+.portfolio .port-item .port-hover a i{ color: #fff}
+.portfolio .port-item .port-hover a:hover{ background-color: #42c3e8;}
+.portfolio .port-item .port-hover a:hover i{ color: #fff}
+.portfolio .port-item .port-hover a i{ font-size: 25px;}
 /* our portfolio ends here
 -------------------------------------------------*/
 
@@ -166,33 +170,33 @@ width: 100%}
 ------------------------------------------------ */
 .team{ background-color:#f5f8fd; padding:80px 0;}
 .team-grid .team-card{ position:relative; overflow:hidden;}
-.team-grid .team-card .card-hover{ position:absolute; font-family:'Montserrat-Regular'; color:white; bottom:0; left:0px; width:100%; background:rgba(29, 28, 41, 0.6); height:26%; transition:0.4s; text-align:center;}
+.team-grid .team-card .card-hover{ position:absolute; font-family:'Montserrat-Regular'; color:white; bottom:0; left:0px; width:100%; background:rgba(29, 28, 41, 0.6); height:26%; transition:all 0.4s; text-align:center;}
 .team-grid .team-card .card-hover h4{ font-weight:700; font-size:18px;}
 .team-grid .team-card .card-hover p{ font-size:13px; font-style:italic;}
-.team-grid .team-card:hover .card-hover{ height:43%; transition:0.4s;}
+.team-grid .team-card:hover .card-hover{ height:43%}
 /* team ends here
 ------------------------------------------------ */
 
 /* our clients start here
 ------------------------------------------------ */
 .our-clients{ padding:60px 0;}
-.c-slider .item{ opacity:0.5; transition:0.4s;}
-.c-slider .item:hover{ opacity:1; transition:0.4s}
+.c-slider .item{ opacity:0.5; transition:all 0.4s;}
+.c-slider .item:hover{ opacity:1}
 /* our clients end here
 ------------------------------------------------ */
 
 /* pricing starts here
 ------------------------------------------------ */
 .pricing{ background-color:#f5f8fd; padding:80px 0;}
-.price-grid .price-card{ background-color:#fff; text-align:center; border-bottom:3px solid #e7e9f1; transition:0.4s; position:relative;}
+.price-grid .price-card{ background-color:#fff; text-align:center; border-bottom:3px solid #e7e9f1; transition:all 0.4s; position:relative;}
 .price-grid .price-card h2{ color:#535074; font-size:64px; position:relative; font-family:'Montserrat-Light'; font-weight:400}
 .price-grid .price-card h2 .money{ font-size:30px; position:absolute; top:5px; left:95px;}
 .price-grid .price-card h2 .month{ font-size:16px; color:#6c67a3; position:absolute; bottom:12px; right:52px;}
 .price-grid .price-card h3{ color:#535074; font-family:'Montserrat-Light'; font-size:24px;}
 .price-grid .price-card p{ width:55%; line-height:2}
-.price-grid .price-card:after{ content:""; position:absolute; top:0; left:0; height:5px; width:0%; background-color:#1bb1dc; transition:0.4s;}
-.price-grid .price-card:hover{ transform:scale(1.05); transition:0.4s; border:none; box-shadow:0 20px 35px 0 rgba(0, 0, 0, 0.08)}
-.price-grid .price-card:hover:after{ width:100%; transition:0.4s;}
+.price-grid .price-card:after{ content:""; position:absolute; top:0; left:0; height:5px; width:0%; background-color:#1bb1dc; transition: all 0.4s;}
+.price-grid .price-card:hover{ transform:scale(1.05); border:none; box-shadow:0 20px 35px 0 rgba(0, 0, 0, 0.08)}
+.price-grid .price-card:hover:after{ width:100%;}
 /* pricing ends here
 ------------------------------------------------ */
 
@@ -257,11 +261,10 @@ width: 100%}
   background-color: #1bb1dc;
   color: white;
   font-size: 20px;
-  transition: 0.4s;
+  transition: all 0.4s;
 }
 .contact-us .footer-social a:hover figure{
   background-color: #0a98c0;
-  transition: 0.4s;
 }
 /*  contact us ends here
 ------------------------------------------------ */
