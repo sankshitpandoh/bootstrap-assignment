@@ -1,8 +1,28 @@
 $(document).ready(function(){
 
+  // wow js to add scroll bounce effect
+  new WOW().init();
+
+
+  // for smooth body scroll
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+      });
+    }
+  });
+
+
   // header-tab to make header solid on scroll
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 40) {
       $('.header-main').addClass('header-scrolled');
       $('.top-bar').addClass('bar-scrolled');
     } else {
@@ -11,13 +31,11 @@ $(document).ready(function(){
     }
   });
 
-  if ($(window).scrollTop() > 100) {
+  if ($(window).scrollTop() > 40) {
     $('.header-main').addClass('header-scrolled');
     $('.top-bar').addClass('bar-scrolled');
   }
 
-  // wow js to add scroll bounce effect
-  new WOW().init();
 
 // counter tab - to make numbers toggle
   $('.counter').counterUp({
@@ -49,6 +67,7 @@ $(document).ready(function(){
     autoplayTimeout:6000,
     autoplayHoverPause:true
 });
+
 // client slider
  var owl = $('.c-slider');
  owl.owlCarousel({
@@ -60,6 +79,21 @@ $(document).ready(function(){
   autoplayHoverPause:true
 });
 
+var Open = false;
+$('.question a').on('click', function(){
+  if(Open == false){
+    $('.question .answer').css({'display': 'block'});
+    $('.question a i').removeClass('ion-ios-add');
+    $('.question a i').addClass('ion-ios-remove');
+    Open = true;
+  }
+  else{
+    $('.question .answer').css({'display' : 'none'});
+    $('.question a i').addClass('ion-ios-add');
+    $('.question a i').removeClass('ion-ios-remove');
+    Open = false
+  }
+});
 
 
 });

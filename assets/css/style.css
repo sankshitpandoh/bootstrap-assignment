@@ -40,7 +40,6 @@ a:hover{ text-decoration:none;}
 p{ margin:0; padding:0}
 /* reset css ends here
 ----------------------------------------------- */
-
 /* global css starts here
 ----------------------------------------------- */
 .common-button{ background-color:#1bb1dc; color:white; transition: all0.4s;}
@@ -205,6 +204,22 @@ p{ margin:0; padding:0}
 .faq{
   background-color: #fff;
   padding: 80px 0;
+}
+.faq .question{
+  border-bottom: 1px solid #ebebeb;
+  color: #000;
+}
+.faq .question h4{
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-size: 20px;
+}
+.faq .question i{
+  font-size: 30px;
+}
+.faq .answer{
+  display: none;
+  transition: all 0.5s;
 }
 /* Frequently asked questions end here
 ------------------------------------------------ */
