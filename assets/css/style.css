@@ -58,14 +58,14 @@ p{ margin:0; padding:0}
 .navbar-nav{ position: relative;}
 .drop-one:hover .first-down{ display: block;}
 .drop-two:hover .second-down{ display: block;}
-.header-scrolled{ height: 70px;padding: 15px 0;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%}
+.header-scrolled{ height: 70px;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%}
 .bar-scrolled{ display: none}
 /* header ends here
 ----------------------------------------------- */
 
 /* hero banner starts here
 ----------------------------------------------- */
-.hero-banner{ background:#f5f8fd url("../images/banner-bg.jpg") center top no-repeat; font-family:'Montserrat-Regular'; height:100vh; margin-top:-112px}
+.hero-banner{ background:#f5f8fd url("../images/banner-bg.jpg") center top no-repeat; font-family:'Montserrat-Regular'; padding: 300px 0px; margin-top:-120px;top: 0}
 .hero-banner .h-color{ color:#1bb1dc}
 .hero-banner .h-button{ font-size:13px;}
 .hero-banner .hero-text h2{ font-family:'Montserrat-Regular'; color:#413e66; letter-spacing:2px; font-size:48px; font-weight:700}
