@@ -48,6 +48,9 @@ p{ margin:0; padding:0}
 .single-link:hover{ color:#1bb1dc}
 /* global css ends here
 ----------------------------------------------- */
+.pageWrapper{
+  position: relative;
+}
 
 /* header begins here
 ----------------------------------------------- */
@@ -58,7 +61,7 @@ p{ margin:0; padding:0}
 .drop-one:hover .first-down{ display: block;}
 .drop-two:hover .second-down{ display: block;}
 .header-scrolled{ height: 70px;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%}
-.bar-scrolled{ display: none}
+.bar-scrolled{ display: none !important}
 /* header ends here
 ----------------------------------------------- */
 
@@ -141,8 +144,8 @@ p{ margin:0; padding:0}
 .portfolio .port-nav li{ cursor: pointer;}
 .portfolio .port-nav li:hover{ color: #1bb1dc;transition: all 0.4s}
 .portfolio .port-item{ position: relative;}
-.portfolio .port-item .port-hover{ background-color: rgba(40,38,70,1);font-family: 'Montserrat-Regular';color: #fff;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: 0 15px;display: none;}
-.portfolio .port-item:hover .port-hover{ display: flex;background-color: rgba(40,38,70,0.6)}
+.portfolio .port-item .port-hover{ background-color: rgba(40,38,70,0.6);font-family: 'Montserrat-Regular';color: #fff;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: 0 15px;visibility: hidden;opacity: 0;transition: visibility 0.5s, opacity 0.5s}
+.portfolio .port-item:hover .port-hover{ opacity: 1;visibility: visible;}
 .portfolio .port-item .port-hover h4{ font-weight: 700;}
 .portfolio .port-item .port-hover h4 a{ font-size: 22px;background-color: transparent;}
 .portfolio .port-item .port-hover h4 a:hover{ font-size: 22px;background-color: transparent;color: #1bb1dc}
@@ -201,29 +204,12 @@ p{ margin:0; padding:0}
 
 /* Frequently asked questions start here
 ------------------------------------------------ */
-.faq{
-  background-color: #fff;
-  padding: 80px 0;
-}
-.faq .question{
-  border-bottom: 1px solid #ebebeb;
-  color: #000;
-}
-.faq .question a:hover{
-  color: #000;
-}
-.faq .question h4{
-  font-family: 'Montserrat-Light';
-  font-weight: 300;
-  font-size: 20px;
-}
-.faq .question i{
-  font-size: 30px;
-}
-.faq .answer{
-  display: none;
-  transition: all 0.5s;
-}
+.faq{ background-color: #fff;padding: 80px 0;}
+.faq .question{ border-bottom: 1px solid #ebebeb;color: #000;}
+.faq .question a:hover{ color: #000;}
+.faq .question h4{ font-family: 'Montserrat-Light';font-weight: 300;font-size: 20px;}
+.faq .question i{ font-size: 30px;}
+.faq .answer{ display: none;transition: all 0.5s;}
 /* Frequently asked questions end here
 ------------------------------------------------ */
 
@@ -286,3 +272,19 @@ p{ margin:0; padding:0}
 }
 /*  contact us ends here
 ------------------------------------------------ */
+
+.back-top{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: #1bb1dc;
+  color: #fff;
+  font-size: 12px;
+}
+.back-top:hover{
+  background-color: #0a98c0;
+  color: #fff;
+}
