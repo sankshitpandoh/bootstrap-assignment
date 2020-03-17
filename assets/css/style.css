@@ -59,8 +59,8 @@ p{ margin:0; padding:0}
 .about-us{ padding:80px 0px; background-color:#ffffff}
 .about-us .about-us-img{ position:relative;}
 .about-us .about-us-img figure img{ width:90%; z-index:1; transition:all 0.75s}
-.about-us .about-us-img figure::before{ content:""; position:absolute; width:80%; height:92%; top:-30px; left:0px; background-color:#ebf1fa; z-index:0;}
-.about-us .about-us-img figure::after{ content:""; position:absolute; width:80%; height:92%; bottom:-30px; right:0px; background-color:#ebf1fa; z-index:0;}
+.about-us .about-us-img figure::before{ content:""; position:absolute; width:90%; height:92%; top:-30px; left:-31px; background-color:#ebf1fa; z-index:0;}
+.about-us .about-us-img figure::after{ content:""; position:absolute; width:90%; height:92%; bottom:-30px; right:-31px; background-color:#ebf1fa; z-index:0;}
 .about-us .about-us-img figure img{ border:8px solid white;}
 .about-us .about-us-img figure img:hover{ transform:scale(1.03);}
 .about-us .text-area h3{ color:#413e66; font-size:35px; font-family:'Montserrat-Regular'; font-weight:900}
@@ -155,7 +155,7 @@ p{ margin:0; padding:0}
 .team-grid .team-card .card-hover{ position:absolute; font-family:'Montserrat-Regular'; color:white; bottom:0; left:0px; width:100%; background:rgba(29, 28, 41, 0.6); height:26%; transition:all 0.4s; text-align:center;}
 .team-grid .team-card .card-hover h4{ font-weight:700; font-size:18px;}
 .team-grid .team-card .card-hover p{ font-size:13px; font-style:italic;}
-.team-grid .team-card:hover .card-hover{ height:43%}
+.team-grid .team-card:hover .card-hover{ height:110px}
 /* team ends here
 ------------------------------------------------ */
 
@@ -189,7 +189,7 @@ p{ margin:0; padding:0}
 .faq .question a:hover{ color: #000;}
 .faq .question h4{ font-family: 'Montserrat-Light';font-weight: 300;font-size: 20px;}
 .faq .question i{ font-size: 30px;}
-.faq .answer{ display: none;transition: all 0.5s;}
+.faq .answer{ display: none;}
 /* Frequently asked questions end here
 ------------------------------------------------ */
 

@@ -91,20 +91,25 @@ var Open = false;
 $('.click-me').click(function(){
     // alert(this.id);
     if(Open == false){
-      $(this).next('.answer').css({'display': 'block'});
+      $(this).next('.answer').slideDown();
       $(this).closest('a').css({'color': '#0a98c0'});
       $(this).children('a i').removeClass('ion-ios-add');
-      $(this).children('a i').addClass('ion-ios-remove')
+      $(this).children('a i').addClass('ion-ios-remove');
+      $(this).closest('.question').siblings('.question').find('.answer').slideUp("slow");
+      $(this).closest('.question').siblings('.question').find('i').removeClass('ion-ios-remove');
+      $(this).closest('.question').siblings('.question').find('i').addClass('ion-ios-add');
+      $(this).closest('.question').siblings('.question').find('a').css({'color': '#000'});
       Open = true;
     }
     else{
-      $(this).next('.answer').css({'display': 'none'});
+      $(this).next('.answer').slideUp();
       $(this).closest('a').css({'color': '#000'});
       $(this).children('a i').removeClass('ion-ios-remove');
       $(this).children('a i').addClass('ion-ios-add');
       Open = false;
     }
 });
+
 
 
 var top = $('.back-to-top');
