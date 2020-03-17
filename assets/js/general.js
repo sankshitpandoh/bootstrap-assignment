@@ -56,6 +56,9 @@ $(document).ready(function(){
     });
   });
 
+// our portfolio - venobox to display image full screen
+  $('.venobox').venobox();
+
 
 // testimonial slider
   var owl = $('.t-slider');
@@ -68,6 +71,7 @@ $(document).ready(function(){
     autoplayHoverPause:true
 });
 
+
 // client slider
  var owl = $('.c-slider');
  owl.owlCarousel({
@@ -78,6 +82,7 @@ $(document).ready(function(){
   autoplayTimeout:5000,
   autoplayHoverPause:true
 });
+
 
 var Open = false;
 $('.question a').on('click', function(){
@@ -97,6 +102,5 @@ $('.question a').on('click', function(){
     Open = false
   }
 });
-
 
 });
