@@ -35,10 +35,15 @@ p{ margin:0; padding:0}
 
 /* header begins here
 ----------------------------------------------- */
-.header-main .main-logo{ font-family: 'Montserrat-Light';font-size: 35px}
+.header-main .main-logo{ font-family: 'Montserrat-Light';font-size: 36px; color: #413e66; letter-spacing: 3px;}
+.header-main .social-links{ font-size: 14px;}
+.header-main .social-links li{padding: 4px 12px}
+.header-main .social-links a{ color: #535074}
+.header-main .social-links a:hover{ color: #1bb1dc}
 .first-down{ display: none;position: absolute;left: 62%;top: 100%;background-color: #fff;z-index: 10;transition: all 4s;font-size: 14px;box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
 .second-down{ display: none;position: absolute;left: 88%;top: 25%;background-color: #fff;z-index: 10;transition: all 4s;font-size: 14px;width: 170px;box-shadow: 0 0px 30px rgba(127, 137, 161, 0.25);}
 .navbar-nav{ position: relative;}
+.navbar-nav a{color:#413e66;}
 .drop-one:hover .first-down{ display: block;}
 .drop-two:hover .second-down{ display: block;}
 .header-scrolled{ height: 70px;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%}
@@ -48,10 +53,10 @@ p{ margin:0; padding:0}
 
 /* hero banner starts here
 ----------------------------------------------- */
-.hero-banner{ background:#f5f8fd url("../images/banner-bg.jpg") center top no-repeat; font-family:'Montserrat-Regular'; padding: 300px 0px; margin-top:-120px;top: 0}
+.hero-banner{ background:#f5f8fd url("../images/banner-bg.jpg") center top no-repeat; font-family:'Montserrat-Regular'; padding: 300px 0px; margin-top:-110px;top: 0}
 .hero-banner .h-color{ color:#1bb1dc}
 .hero-banner .h-button{ font-size:13px;}
-.hero-banner .hero-text h2{ font-family:'Montserrat-Regular'; color:#413e66; letter-spacing:2px; font-size:48px; font-weight:700}
+.hero-banner .hero-text h2{ font-family:'Montserrat-Bold'; color:#413e66; letter-spacing:2px; font-size:48px; font-weight:400}
 /* hero banner ends here
 ----------------------------------------------- */
 
