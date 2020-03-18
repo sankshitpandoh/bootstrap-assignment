@@ -3,6 +3,7 @@
 @font-face{ font-family: 'Montserrat-Bold';src: url('../fonts/Montserrat-Bold.eot.eot') format('eot'), url('../fonts/Montserrat-Bold.svg') format('svg'), url('../fonts/Montserrat-Bold.ttf') format('ttf'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.woff2') format('woff2');}
 @font-face{ font-family: 'Montserrat-Light';src: url('../fonts/Montserrat-Light.eot.eot') format('eot'), url('../fonts/Montserrat-Light.svg') format('svg'), url('../fonts/Montserrat-Light.ttf') format('ttf'), url('../fonts/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat-Light.woff2') format('woff2');}
 @font-face{ font-family: 'Montserrat-Regular';src: url('../fonts/Montserrat-Regular.eot.eot') format('eot'), url('../fonts/Montserrat-Regular.svg') format('svg'), url('../fonts/Montserrat-Regular.ttf') format('ttf'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.woff2') format('woff2');}
+@font-face{ font-family: 'OpenSans';src: url('../fonts/OpenSans.eot') format('eot'), url('../fonts/OpenSans.svg') format('svg'), url('../fonts/OpenSans.ttf') format('ttf'), url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.woff2') format('woff2');}
 
 /* font face ends here --
 ----------------------------------------------- */
@@ -64,9 +65,9 @@ p{ margin:0; padding:0}
 .about-us .about-us-img figure img{ border:8px solid white;}
 .about-us .about-us-img figure img:hover{ transform:scale(1.03);}
 .about-us .text-area h3{ color:#413e66; font-size:35px; font-family:'Montserrat-Regular'; font-weight:900}
-.about-us .text-area p{ font-size:17px; font-family:"Open Sans", sans-serif; color:#444}
+.about-us .text-area p{ font-size:17px; font-family:"OpenSans"; color:#444}
 .about-us .text-area p:nth-child(2){ color:#696592; font-size:22px; font-family:'Montserrat-Light'; font-style:italic;}
-.about-us .text-area li{ display:block; font-family:"Open Sans", sans-serif; letter-spacing:0.8px}
+.about-us .text-area li{ display:block; font-family:"OpenSans"; letter-spacing:0.8px}
 
 /* about us ends here
 ---------------------------------------------- */
@@ -198,7 +199,7 @@ p{ margin:0; padding:0}
 .contact-us{
   background-color: #f5f8fd;
   padding: 50px 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans";
 }
 .contact-us h4{
   color: #413e66;
@@ -220,7 +221,7 @@ p{ margin:0; padding:0}
 }
 .contact-us .top-second .single-link{
   color: #696592;
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans";
 }
 .contact-us .bottom-first{
   font-size: 14px;
@@ -250,8 +251,40 @@ p{ margin:0; padding:0}
 .contact-us .footer-social a:hover figure{
   background-color: #0a98c0;
 }
+.contact-us .right-form p{
+  font-size: 14px;
+}
+.contact-us .right-form form input,textarea{
+  border: 1px solid #dce1ec
+}
+.contact-us .right-form form input,textarea::placeholder{
+  font-size: 15px;
+}
 /*  contact us ends here
 ------------------------------------------------ */
+/* footer starts here
+-------------------------------------------------*/
+.footer-main{
+  background-color: #fff;
+  padding: 32px 0;
+}
+.footer-content p:nth-child(1){
+  font-size: 15px;
+}
+.footer-content p:nth-child(2){
+  font-size: 14px;
+  color: #8582a8;
+  font-family: "OpenSans";
+}
+.footer-content p:nth-child(2) a{
+  color: #1bb1dc;
+}
+.footer-content p:nth-child(2) a:hover{
+  color: #0a98c0;
+}
+/* footer ends here
+-------------------------------------------------*/
+
 /* back to top button starts here
 ------------------------------------------------ */
 .back-to-top{ position: fixed;height: 50px;width: 50px;border-radius: 50%;bottom: 0;right: 0;background-color: #1bb1dc;color: #fff;font-size: 12px;}
