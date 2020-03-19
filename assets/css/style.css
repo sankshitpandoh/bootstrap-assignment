@@ -21,18 +21,20 @@ a:hover{ text-decoration:none;}
 p{ margin:0; padding:0}
 /* reset css ends here
 ----------------------------------------------- */
+
 /* global css starts here
 ----------------------------------------------- */
-.common-button{ background-color:#1bb1dc; color:white; transition: all0.4s;}
+.common-button{ background-color:#1bb1dc; color:white; transition: all 0.4s;}
 .common-button:hover{ cursor:pointer; background-color:#0a98c0;}
 .single-link{ color:black; font-family:'Montserrat-Regular'; font-size:14px;}
 .single-link:hover{ color:#1bb1dc}
+.owl-dot.active span{background: #1bb1dc !important}
+.owl-dot:hover span{background: #d6d6d6 !important}
 /* global css ends here
 ----------------------------------------------- */
 .pageWrapper{
   position: relative;
 }
-
 /* header begins here
 ----------------------------------------------- */
 .header-main .main-logo{ font-family: 'Montserrat-Light';font-size: 36px; color: #413e66; letter-spacing: 3px;}
@@ -70,7 +72,7 @@ p{ margin:0; padding:0}
 .about-us .about-us-img figure img {border: 8px solid white; }
 .about-us .about-us-img figure img:hover {transform: scale(1.03); }
 .about-us .text-area h3 {color: #413e66; font-size: 35px; font-family: 'Montserrat-Regular'; font-weight: 900}
-.about-us .text-area p {font-size: 17px; font-family: "OpenSans"; color: #444}
+.about-us .text-area p {font-size: 16px; font-family: "OpenSans"; color: #444}
 .about-us .text-area p:nth-child(2) {color: #696592; font-size: 22px; font-family: 'Montserrat-Light'; font-style: italic; }
 .about-us .text-area li {display: block; font-family: "OpenSans"; letter-spacing: 0.8px}
 /* about us ends here
@@ -86,7 +88,7 @@ p{ margin:0; padding:0}
 .services .single-service:hover h3{ color:#1bb1dc;}
 .services .single-service figure{ width:60px; height:60px; border-radius:50%; margin:0 auto; background-color:red}
 .services .single-service figure i{ font-size:40px;}
-.services .single-service p{ text-align:left; font-size:14px; font-family:'Montserrat-Light';}
+.services .single-service p{ text-align:left; font-size:14px; font-family:'Montserrat-Light'; line-height: 28px;}
 .services .single-service h3{ text-align:center; font-size:18px; font-family:'Montserrat-Regular'; font-weight:700; margin-bottom:12px; color:#111;}
 .services .single-service h3 a:hover{ color:#1bb1dc; text-decoration:none;}
 /* services end here
@@ -146,7 +148,8 @@ p{ margin:0; padding:0}
 /* testimonials start here
 ------------------------------------------------*/
 .testimonials{ background-color:#fff; padding:80px 0;}
-.t-slider .item figure img{ border-radius:50%; height:100px; width:100px;}
+.t-slider .item figure{ border-radius:50%; width:120px;}
+.t-slider .item figure img{ border-radius:50%; width:120px;}
 .t-slider .item .item-info h3{ font-size:20px; font-weight:bold; font-family:'Montserrat-Regular';}
 .t-slider .item .item-info h4{ font-size:14px; color:#999}
 .t-slider .item .item-info p{ font-style:italic;}
@@ -159,7 +162,7 @@ p{ margin:0; padding:0}
 .team-grid .team-card{ position:relative; overflow:hidden;}
 .team-grid .team-card .card-hover{ position:absolute; font-family:'Montserrat-Regular'; color:white; bottom:0; left:0px; width:100%; background:rgba(29, 28, 41, 0.6); height:30%; transition:all 0.4s; text-align:center;}
 .team-grid .team-card .card-hover h4{ font-weight:700; font-size:18px;}
-.team-grid .team-card .card-hover p{ font-size:13px; font-style:italic;}
+.team-grid .team-card .card-hover p{ font-size:13px; font-style:italic; font-family: 'OpenSans'}
 .team-grid .team-card:hover .card-hover{ height:110px}
 /* team ends here
 ------------------------------------------------ */
@@ -176,12 +179,12 @@ p{ margin:0; padding:0}
 ------------------------------------------------ */
 .pricing{ background-color:#f5f8fd; padding:80px 0;}
 .price-grid .price-card{ position:relative;}
-.price-grid .price-card > div{ background-color:#fff; text-align:center; border-bottom:3px solid #e7e9f1; transition:all 0.4s; }
 .price-grid .price-card h2{ color:#535074; font-size:64px; position:relative; font-family:'Montserrat-Light'; font-weight:400}
 .price-grid .price-card h2 .money{ font-size:30px; position:absolute; top:5px; left:95px;}
 .price-grid .price-card h2 .month{ font-size:16px; color:#6c67a3; position:absolute; bottom:12px; right:52px;}
 .price-grid .price-card h3{ color:#535074; font-family:'Montserrat-Light'; font-size:24px;}
-.price-grid .price-card p{ width:55%; line-height:2}
+.price-grid .price-card ul,li{ display: block; line-height:2; font-family: 'OpenSans'; color: #413e66}
+.price-grid .price-card > div{ background-color:#fff; text-align:center; border-bottom:3px solid #e7e9f1; transition:all 0.4s; }
 .price-grid .price-card > div:after{ content:""; position:absolute; top:0; left:0; height:5px; width:0%; background-color:#1bb1dc; transition: all 0.4s;}
 .price-grid .price-card > div:hover{ transform:scale(1.05); border:none; box-shadow:0 20px 35px 0 rgba(0, 0, 0, 0.08)}
 .price-grid .price-card > div:hover:after{ width:100%;}
@@ -214,8 +217,9 @@ p{ margin:0; padding:0}
 .contact-us .footer-social figure {width: 36px;height: 36px;background-color: #1bb1dc;color: white;font-size: 20px;transition: all 0.4s;}
 .contact-us .footer-social a:hover figure {background-color: #0a98c0;}
 .contact-us .right-form p {font-size: 14px;}
+.contact-us .right-form form textarea {height: 160px;}
 .contact-us .right-form form input,textarea {border: 1px solid #dce1ec}
-.contact-us .right-form form input,textarea:: placeholder {font-size: 15px;}
+.contact-us .right-form form input,textarea::placeholder {font-size: 15px;}
 /*  contact us ends here
 ------------------------------------------------ */
 /* footer starts here

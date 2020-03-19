@@ -43,7 +43,7 @@ $(document).ready(function(){
 // counter tab - to make numbers toggle
   $('.counter').counterUp({
   delay: 10,
-  time: 2000
+  time: 1000
   });
 
 // our portfolio - isotope js to display selecetd content
