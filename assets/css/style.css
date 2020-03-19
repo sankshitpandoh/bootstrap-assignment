@@ -17,7 +17,7 @@ figure{ padding:0; margin:0; line-height:0;}
 img{ max-width:100%; max-height:100%}
 ul,li{ text-decoration:none; display:inline; margin:0; padding:0;}
 a{ text-decoration:none; color:inherit; transition: all 0.5s;}
-a:hover{ text-decoration:none;}
+a:hover{ text-decoration:none; color: #1bb1dc}
 p{ margin:0; padding:0}
 /* reset css ends here
 ----------------------------------------------- */
@@ -164,6 +164,7 @@ p{ margin:0; padding:0}
 .team-grid .team-card .card-hover h4{ font-weight:700; font-size:18px;}
 .team-grid .team-card .card-hover p{ font-size:13px; font-style:italic; font-family: 'OpenSans'}
 .team-grid .team-card:hover .card-hover{ height:110px}
+.team-grid .team-card .card-hover ul, .team-grid .team-card .card-hover li{ font-size:18px; font-family: 'OpenSans'}
 /* team ends here
 ------------------------------------------------ */
 
@@ -179,11 +180,11 @@ p{ margin:0; padding:0}
 ------------------------------------------------ */
 .pricing{ background-color:#f5f8fd; padding:80px 0;}
 .price-grid .price-card{ position:relative;}
-.price-grid .price-card h2{ color:#535074; font-size:64px; position:relative; font-family:'Montserrat-Light'; font-weight:400}
-.price-grid .price-card h2 .money{ font-size:30px; position:absolute; top:5px; left:95px;}
-.price-grid .price-card h2 .month{ font-size:16px; color:#6c67a3; position:absolute; bottom:12px; right:52px;}
+.price-grid .price-card h2{ color:#535074; font-size:64px; font-family:'Montserrat-Light'; font-weight:400}
+.price-grid .price-card h2 .money{ font-size:30px; position:relative; top:-30px; left:20px;}
+.price-grid .price-card h2 .month{ font-size:16px; color:#6c67a3; position:relative; right:22px;}
 .price-grid .price-card h3{ color:#535074; font-family:'Montserrat-Light'; font-size:24px;}
-.price-grid .price-card ul,li{ display: block; line-height:2; font-family: 'OpenSans'; color: #413e66}
+.price-grid .price-card ul,.price-grid .price-card li{ display: block; font-family: 'OpenSans'}
 .price-grid .price-card > div{ background-color:#fff; text-align:center; border-bottom:3px solid #e7e9f1; transition:all 0.4s; }
 .price-grid .price-card > div:after{ content:""; position:absolute; top:0; left:0; height:5px; width:0%; background-color:#1bb1dc; transition: all 0.4s;}
 .price-grid .price-card > div:hover{ transform:scale(1.05); border:none; box-shadow:0 20px 35px 0 rgba(0, 0, 0, 0.08)}
