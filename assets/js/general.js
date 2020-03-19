@@ -114,7 +114,18 @@ $(document).ready(function(){
   margin:30,
   autoplay:true,
   autoplayTimeout:5000,
-  autoplayHoverPause:true
+  autoplayHoverPause:true,
+  responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
+      }
+    }
 });
 
 // frequently asked questions - toggle answers
