@@ -56,8 +56,8 @@ p{ margin:0; padding:0}
 .mob-navbar ul, .mob-navbar li{ display: block;  width: 260px;}
 .mob-navbar a{color: #fff}
 .mob-navbar a:hover{color: #8dc2fa}
-.mob-navbar{position: absolute; top: 0; left: 0; background: rgba(40, 38, 70, 0.8); height: 100%; z-index: 999; font-family: 'OpenSans'}
-.mob-navbar-background{position: absolute; top:0; left:0; right: 0; bottom: 0; background: rgba(40, 38, 70, 0.8); z-index: 998}
+.mob-navbar{position: absolute; top: 0; left: 0; background: rgba(40, 38, 70, 0.8); height: 100vh; z-index: 999; font-family: 'OpenSans'}
+.mob-navbar-background{position: absolute; top:0; left:0; right: 0; bottom: 0;height: 100vh; background: rgba(40, 38, 70, 0.8); z-index: 998}
 /* header ends here
 ----------------------------------------------- */
 
