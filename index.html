@@ -40,7 +40,7 @@
       <!-- header starts here -->
       <header class="header-main d-flex justify-content-center">
         <div class="container">
-          <div class="row top-bar pt-3">
+          <div class="row top-bar d-lg-flex d-none pt-3">
             <ul class="col-12 social-links d-flex justify-content-end">
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -54,6 +54,7 @@
               <span class="main-logo">RAPID</span>
             </a>
 
+            <!-- nav bar expanded starts here -->
             <ul class="navbar-nav ml-auto d-lg-flex d-none ">
               <li class="nav-item">
                 <a class="nav-link single-link mx-1" href="#home">HOME</a>
@@ -98,10 +99,33 @@
                 <a class="nav-link single-link mx-1" href="#contact-us">CONTACT US</a>
               </li>
             </ul>
+            <!-- nav bar expanded ends -->
+
+            <!-- hamburger starts here -->
+            <i class="fa fa-bars ml-auto hamburger d-lg-none"></i>
+
+
+            <!-- hamburger ends here -->
           </nav>
         </div>
       </header>
       <!-- header ends here -->
+<!-- mob nav starts here -->
+      <div class="mob-navbar d-none">
+        <ul class="d-block">
+          <a class="m-1" href="#"><li class="px-3">Home</li></a>
+          <a class="m-1" href="#"><li class="px-3">About Us</li></a>
+          <a class="m-1" href="#"><li class="px-3">Services</li></a>
+          <a class="m-1" href="#"><li class="px-3">Portfolio</li></a>
+          <a class="m-1" href="#"><li class="px-3">Team</li></a>
+          <a class="m-1" href="#"><li class="px-3">Drop Down <i class="fa fa-angle-down pl-4"></i></li></a>
+          <a class="m-1" href="#"><li class="px-3">Contact Us</li></a>
+        </ul>
+     </div>
+     <div class="mob-navbar-background d-none">
+
+     </div>
+<!-- mob nav starts here -->
 
       <!-- hero banner starts here -->
       <section class="hero-banner" id="home">

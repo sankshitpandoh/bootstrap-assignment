@@ -19,6 +19,7 @@ $(document).ready(function(){
     }
   });
 
+  // for hamburger on click
 
   // header-tab to make header solid on scroll
   $(window).scroll(function() {
@@ -39,11 +40,41 @@ $(document).ready(function(){
     $('.back-top').removeClass('bar-scrolled');
   }
 
+  // hamburger on click (for mobile nav bar)
+  var ham = close
+  $('.hamburger').click(function(){
+
+    if(ham == close){
+      $('.hamburger').removeClass('fa-bars')
+      $('.hamburger').addClass('fa-times')
+      $('.hamburger').css({'color': '#fff', 'z-index': '999'});
+      $('.mob-navbar').removeClass('d-none')
+      $('.mob-navbar').addClass('d-flex')
+      $('.mob-navbar-background').removeClass('d-none')
+      $('.mob-navbar-background').addClass('d-flex')
+      $('body').addClass('no-scroll')
+    ham = open
+      }
+
+    else{
+      $('.hamburger').removeClass('fa-times')
+      $('.hamburger').addClass('fa-bars')
+      $('.hamburger').css({'color': '#065e77'});
+      $('.mob-navbar').removeClass('d-flex')
+      $('.mob-navbar').addClass('d-none')
+      $('.mob-navbar-background').removeClass('d-flex')
+      $('.mob-navbar-background').addClass('d-none')
+      $('body').removeClass('no-scroll')
+      ham = close
+        }
+
+  })
+
 
 // counter tab - to make numbers toggle
   $('.counter').counterUp({
   delay: 10,
-  time: 1000
+  time: 2000
   });
 
 // our portfolio - isotope js to display selecetd content
