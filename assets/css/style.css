@@ -33,9 +33,7 @@ p{ margin:0; padding:0}
 .no-scroll{overflow: hidden;}
 /* global css ends here
 ----------------------------------------------- */
-.pageWrapper{
-  position: relative;
-}
+.pageWrapper{ position: relative;}
 /* header begins here
 ----------------------------------------------- */
 .header-main .main-logo{ font-family: 'Montserrat-Light';font-size: 36px; color: #413e66; letter-spacing: 3px;}
@@ -50,14 +48,16 @@ p{ margin:0; padding:0}
 .navbar-nav a:hover{color:#1bb1dc;}
 .drop-one:hover .first-down{ display: block;}
 .drop-two:hover .second-down{ display: block;}
-.header-scrolled{ height: 70px;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%}
-.bar-scrolled{ display: none !important}
+.header-scrolled{ height: 70px;background-color: #fff;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);position: fixed;top: 0;z-index: 995;width: 100%; transition: all 0.5s}
+.bar-scrolled{ display: none !important; transition: all 0.5s}
+  /* mobile navbar starts here */
 .hamburger{font-size: 25px; color: #065e77; cursor: pointer;}
 .mob-navbar ul, .mob-navbar li{ display: block;  width: 260px;}
 .mob-navbar a{color: #fff}
 .mob-navbar a:hover{color: #8dc2fa}
 .mob-navbar{position: absolute; top: 0; left: 0; background: rgba(40, 38, 70, 0.8); height: 100vh; z-index: 999; font-family: 'OpenSans'}
 .mob-navbar-background{position: absolute; top:0; left:0; right: 0; bottom: 0;height: 100vh; background: rgba(40, 38, 70, 0.8); z-index: 998}
+  /* mobile navbar ends here */
 /* header ends here
 ----------------------------------------------- */
 
@@ -272,6 +272,7 @@ p{ margin:0; padding:0}
     width: 90%
   }
 }
+
 @media (max-width: 767px){
   .hero-banner{
     padding: 130px 0;
@@ -291,6 +292,37 @@ p{ margin:0; padding:0}
   align-items: center;
   text-align: center;
   }
+  .bottom-first{
+    margin-bottom: 30px;
+  }
+  .right-form .container{
+    padding: 0;
+  }
+  .team-grid .team-card .card-hover{
+    height: 14%
+  }
+}
+
+@media(max-width: 480px){
+  .section-heading p{
+    width: 100%;
+  }
+  .top-first{
+    order:1
+  }
+  .top-second{
+    order:3
+  }
+  .bottom-first{
+    order:2
+  }
+  .bottom-second{
+    order:4
+  }
+  .footer-social{
+    margin-bottom: 25px;
+  }
+
 }
 /* responsive media queries end here
 -------------------------------------------------*/
