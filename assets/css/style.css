@@ -75,8 +75,8 @@ p{ margin:0; padding:0}
 .about-us {padding: 80px 0px; background-color: #ffffff}
 .about-us .about-us-img figure {position: relative; }
 .about-us .about-us-img figure img {width: 90%; z-index: 1; transition: all 0.75s}
-.about-us .about-us-img figure::after {content: ""; position: absolute; width: 80%; height: 92%; bottom: -30px; right: -10px; background-color: #ebf1fa; z-index: 0; }
-.about-us .about-us-img figure::before {content: ""; position: absolute; width: 80%; height: 92%; top: -30px; left: -10px; background-color: #ebf1fa; z-index: 0; }
+.about-us .about-us-img figure::after {content: ""; position: absolute; width: 80%; height: 92%; bottom: -6%; right: -2%; background-color: #ebf1fa; z-index: 0; }
+.about-us .about-us-img figure::before {content: ""; position: absolute; width: 80%; height: 92%; top: -6%; left: -2%; background-color: #ebf1fa; z-index: 0; }
 .about-us .about-us-img figure img {border: 8px solid white; }
 .about-us .about-us-img figure img:hover {transform: scale(1.03); }
 .about-us .text-area h3 {color: #413e66; font-size: 35px; font-family: 'Montserrat-Regular'; font-weight: 900}
@@ -231,6 +231,7 @@ p{ margin:0; padding:0}
 .contact-us .right-form form input,textarea::placeholder {font-size: 15px;}
 /*  contact us ends here
 ------------------------------------------------ */
+
 /* footer starts here
 -------------------------------------------------*/
 .footer-main {background-color: #fff; padding: 32px 0;}
@@ -248,81 +249,34 @@ p{ margin:0; padding:0}
 /* back to top button ends here
 ------------------------------------------------ */
 
-
-
 /* responsive media queries start here
 -------------------------------------------------*/
-@media (max-width: 991px){
-  .header-main .main-logo{
-    font-size: 28px;
-  }
-  .price-card{
-    margin-bottom: 40px;
-  }
-  .action-content{
-    margin-bottom: 30px;
-  }
-  .team-card{
-    margin-bottom: 20px;
-  }
-  .team-grid .team-card .card-hover{
-    height: 20%
-  }
-  .faq .question h4{
-    width: 90%
-  }
+@media (max-width: 991px) {.header-main .main-logo {font-size: 28px; }
+ .price-card {margin-bottom: 40px; }
+ .action-content {margin-bottom: 30px; }
+ .team-card {margin-bottom: 20px; }
+ .team-grid .team-card .card-hover {height: 20% }
+ .faq .question h4 {width: 90% }
 }
 
-@media (max-width: 767px){
-  .hero-banner{
-    padding: 130px 0;
-  }
-  .hero-banner .hero-text{
-      text-align: center;
-      padding-top: 40px;
-  }
-  .hero-banner .hero-img{
-    width: 80%;
-  }
-  .hero-banner .hero-text h2{
-    font-size: 34px;
-  }
-  .t-slider .item{
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  }
-  .bottom-first{
-    margin-bottom: 30px;
-  }
-  .right-form .container{
-    padding: 0;
-  }
-  .team-grid .team-card .card-hover{
-    height: 14%
-  }
+@media (max-width: 767px) {.hero-banner {padding: 130px 0; }
+ .hero-banner .hero-text {text-align: center; padding-top: 40px; }
+ .hero-banner .hero-img {width: 80%; }
+ .hero-banner .hero-text h2 {font-size: 34px; }
+ .t-slider .item {flex-direction: column; align-items: center; text-align: center; }
+ .bottom-first {margin-bottom: 30px; }
+ .right-form .container {padding: 0; }
+ .team-grid .team-card .card-hover {height: 14% }
+ .about-us .about-us-img figure{ margin-bottom: 50px;}
 }
 
-@media(max-width: 480px){
-  .section-heading p{
-    width: 100%;
-  }
-  .top-first{
-    order:1
-  }
-  .top-second{
-    order:3
-  }
-  .bottom-first{
-    order:2
-  }
-  .bottom-second{
-    order:4
-  }
-  .footer-social{
-    margin-bottom: 25px;
-  }
-
+@media(max-width: 480px) {.section-heading p {width: 100%; }
+ .top-first {order: 1 }
+ .top-second {order: 3 }
+ .bottom-first {order: 2 }
+ .bottom-second {order: 4 }
+ .footer-social {margin-bottom: 25px; }
 }
+
 /* responsive media queries end here
 -------------------------------------------------*/
